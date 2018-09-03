@@ -1,0 +1,28 @@
+# Site settings
+title: Leo-Club Weil am Rhein
+author: Andreas Remdt
+email: info@leo-club-weilamrhein.de
+description: Wir sind Jugendliche und Erwachsene und engagieren uns für das Wohl von benachteiligten Menschen, etwa aus Kinder- oder Pflegeheimen.
+locale: de-DE
+
+# URL settings
+url: https://leo-club-weilamrhein.de
+baseurl: ""
+permalink: pretty
+
+# SCSS
+sass:
+  style: compressed
+
+# File settings
+exclude:
+  - Gemfile
+  - README.md
+  - LICENSE.txt
+  - .gitignore
+  - .sass-cache
+
+# Plugin settings
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
