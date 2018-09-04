@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div id="site-content" class="container">
+  <main id="site-posts">
+    {%- for post in site.posts limit: 10 -%}
+      {%- include post.html -%}
+    {%- endfor -%}
+  </main>
+  
+  {% include sidebar.html %}
+</div>

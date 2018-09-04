@@ -1,0 +1,42 @@
+<aside id="site-sidebar">
+  <section>
+    <h3 class="fancy-title">Über Uns</h3>
+    <p class="text-center">{{ site.description }}</p>
+  </section>
+
+  <section>
+    <h3 class="fancy-title">Netzwerke</h3>
+    <p class="text-center">Folgen Sie uns in den sozialen Netzwerken, um keine Neuigkeiten zu verpassen!</p>
+    <ul id="social-sidebar">
+       {%- for social_link in site.social_links -%}
+       <li>
+          <a href="{{ social_link.url }}" target="_blank" rel="noopener" title="Der Leo-Club auf {{ social_link.name }}">
+            <svg width="18" height="18">
+              <use xlink:href="/assets/svgs/icons.svg#icon-{{ social_link.name | downcase }}"></use>
+            </svg>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+
+  <section>
+    <h3 class="fancy-title">Aktuelles</h3>
+
+    {%- for post in site.posts limit: 2 -%}
+      <article class="sidebar-post">
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        <time datetime="{{ post.date | date_to_xmlschema }}">Veröffentlicht am {{ post.date | date: "%d.%m.%Y" }}</time>
+      </article>
+    {%- endfor -%}
+  </section>
+
+  <section>
+    <h3 class="fancy-title">Kategorien</h3>
+    <ul>
+      {%- for category in site.categories -%}
+        <li><a href="#">{{ category | first | strip_html }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </section>
+</aside>

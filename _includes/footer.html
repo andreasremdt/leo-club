@@ -2,13 +2,13 @@
   <div class="container">
     <div class="row">
       <section class="footer-section">
-        <h3 class="footer-title">Über Uns</h3>
+        <h3 class="fancy-title">Über Uns</h3>
         <p>{{ site.description }}</p>
         <a href="https://www.leo-clubs.de/" class="link-external" target="_blank" rel="noopener">Leo-Clubs in Deutschland</a>
       </section>
       
       <section class="footer-section">
-        <h3 class="footer-title">Aktionen</h3>
+        <h3 class="fancy-title">Aktionen</h3>
       
         {%- for post in site.posts limit: 2 -%}
           <article class="footer-article">
@@ -19,7 +19,7 @@
         </section>
         
         <section class="footer-section">
-          <h3 class="footer-title">Galerie</h3>
+          <h3 class="fancy-title">Galerie</h3>
           
           <figure id="footer-gallery">
             {%- assign count = 0 -%}
@@ -36,7 +36,7 @@
       </section>
       
       <nav class="footer-section">
-        <h3 class="footer-title">Menü</h3>
+        <h3 class="fancy-title">Menü</h3>
         <ul id="footer-menu">
           <li><a href="/">Startseite</a></li>
           <li><a href="/aktionen/">Aktionen</a></li>

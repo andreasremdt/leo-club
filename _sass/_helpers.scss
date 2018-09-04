@@ -12,3 +12,45 @@
     filter: brightness(0.6);
   }
 }
+
+.fancy-title {
+  padding: .6rem 1rem;
+  position: relative;
+
+  text-align: center;
+
+  border-radius: 2px;
+
+  background-color: $gray-color-darkest;
+  color: $white-color;
+
+  &::before {
+    position: absolute;
+    left: $spacing-default;
+    top: 0;
+    
+    width: 100px;
+    height: 100%;
+    
+    background: transparent url("/assets/svgs/left-arrow.svg") no-repeat left center;
+    filter: brightness(10);
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    right: $spacing-default;
+    top: 0;
+    
+    width: 100px;
+    height: 100%;
+    
+    background: transparent url("/assets/svgs/right-arrow.svg") no-repeat right center;
+    filter: brightness(10);
+    content: "";
+  }
+}
+
+.text-center {
+  text-align: center;
+}

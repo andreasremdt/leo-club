@@ -3,3 +3,15 @@
   margin: auto;
   padding: 0 $spacing-default;
 }
+
+#site-content {
+  display: flex;
+}
+
+#site-posts {
+  flex: 1 1 70%;
+}
+
+#site-sidebar {
+  flex: 1 1 30%;
+}
