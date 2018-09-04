@@ -10,6 +10,15 @@ url: https://leo-club-weilamrhein.de
 baseurl: ""
 permalink: pretty
 
+# Social links
+social_links:
+  - name: Facebook
+    url: https://www.facebook.com/pages/Leo-Club-Weil-am-Rhein/189139934566022
+  - name: Vimeo
+    url: http://vimeo.com/leoclubweilamrhein
+  - name: Instagram
+    url: https://instagram.com
+
 # SCSS
 sass:
   style: compressed

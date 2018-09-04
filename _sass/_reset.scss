@@ -8,9 +8,11 @@ html {
 
 body {
   margin: 0;
+
+  background-color: $gray-color-lightest;
 }
 
-img {
+img, svg {
   vertical-align: middle;
   max-width: 100%;
 }
