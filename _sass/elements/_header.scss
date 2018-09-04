@@ -1,4 +1,6 @@
 #site-header {
+  margin-bottom: $spacing-big;
+  
   background-color: $white-color;
   
   box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .07);
@@ -12,9 +14,10 @@
   align-items: center;
   padding: $spacing-default;
 
-  .item {
+  > .item {
     margin: 0 $spacing-default;
-    font: 700 14px/1.6 $sans-font;
+
+    font: 700 14px $sans-font, $fallback-font;
     text-transform: uppercase;
 
     color: $gray-color-darkest;
@@ -30,50 +33,45 @@
   }
 }
 
-#logo {
+#site-logo {
   order: 4;
   margin: 0 $spacing-big;
 
   text-align: center;
 
-  > .title {
+  > #title {
     color: $yellow-color;
+
     font-weight: 700;
     font-size: 24px;
   }
 
-  > .arrows {
+  > #arrows {
     display: inline-block;
     position: relative;
 
-    font-family: $sans-font;
-    font-weight: 600;
-    font-size: 12px;
+    font: 600 12px/inherit $sans-font, $fallback-font;
     text-transform: uppercase;
 
     color: $gray-color-darkest;
 
-
-    &::before {
+    &::before, &::after {
       content: "";
 
       position: absolute;
-      right: 110%;
       top: 0;
       width: 100px;
       height: 100%;
+    }
+
+    &::before {
+      right: 110%;
 
       background: transparent url("/assets/svgs/left-arrow.svg") no-repeat right center;
     }
 
-    &::after {
-      content: "";
-      
-      position: absolute;
+    &::after {      
       left: 110%;
-      top: 0;
-      width: 100px;
-      height: 100%;
 
       background: transparent url("/assets/svgs/right-arrow.svg") no-repeat left center;
     }
@@ -99,12 +97,10 @@
 
   border-right: 1px solid $gray-color-light;
 
-  .icon {
+  a {
     margin-right: 1rem;
 
     color: $gray-color;
-
-    outline: none;
 
     &:hover, &:focus {
       color: $gray-color-darkest;

@@ -4,8 +4,8 @@
       <ul id="social-icons">
         {%- for social_link in site.social_links -%}
           <li>
-            <a class="icon" href="{{ social_link.url }}" target="_blank" rel="noopener" title="Der Leo-Club auf {{ social_link.name }}">
-              <svg width="20" height="20">
+            <a href="{{ social_link.url }}" target="_blank" rel="noopener" title="Der Leo-Club auf {{ social_link.name }}">
+              <svg width="18" height="18">
                 <use xlink:href="/assets/svgs/icons.svg#icon-{{ social_link.name | downcase }}"></use>
               </svg>
             </a>
@@ -23,13 +23,13 @@
     </div>
   </div>
   <nav id="site-navigation">
-    <a href="{{ site.url }}" id="logo">
+    <a href="{{ site.url }}" id="site-logo">
       <img src="{{ "assets/svgs/curved-ribbon.svg" | relative_url }}" alt="Logo">
 
-      <div class="title">
+      <div id="title">
         {{ site.title }}
       </div>
-      <div class="arrows">
+      <div id="arrows">
         Seit 2009
       </div>
     </a>

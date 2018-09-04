@@ -1,0 +1,14 @@
+.link-external {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: -6px;
+    right: -18px;
+    width: 14px;
+    height: 14px;
+
+    content: url("/assets/svgs/external.svg");
+    filter: brightness(0.6);
+  }
+}
