@@ -17,7 +17,9 @@ social_links:
   - name: Vimeo
     url: http://vimeo.com/leoclubweilamrhein
   - name: Instagram
-    url: https://instagram.com
+    url: https://www.instagram.com/leoclubweilamrhein/
+  - name: RSS
+    url: /feed.xml
 
 # SCSS
 sass:

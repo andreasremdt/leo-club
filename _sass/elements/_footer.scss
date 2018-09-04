@@ -1,0 +1,131 @@
+#site-footer {
+  margin-top: $spacing-big;
+  padding-top: $spacing-big;
+  background-color: $white-color;
+
+  box-shadow: 0 -.1rem .3rem rgba(0, 0, 0, .07);
+
+  .row {
+    display: flex;
+    margin: 0 -1rem $spacing-big -1rem;
+  }
+}
+
+.footer-section {
+  flex: 1 1 25%;
+  padding: 0 1rem;
+}
+
+.footer-title {
+  padding: .6rem 1rem;
+  position: relative;
+
+  text-align: center;
+
+  border-radius: 2px;
+
+  background-color: $gray-color-darkest;
+  color: $white-color;
+
+  &::before {
+    position: absolute;
+    left: $spacing-default;
+    top: 0;
+    
+    width: 100px;
+    height: 100%;
+    
+    background: transparent url("/assets/svgs/left-arrow.svg") no-repeat left center;
+    filter: brightness(10);
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    right: $spacing-default;
+    top: 0;
+    
+    width: 100px;
+    height: 100%;
+    
+    background: transparent url("/assets/svgs/right-arrow.svg") no-repeat right center;
+    filter: brightness(10);
+    content: "";
+  }
+}
+
+.footer-article {
+  margin-bottom: $spacing-default;
+
+  h4 {
+    margin: 0;
+  
+    a {
+      color: $gray-color-darkest;
+
+      &:hover, &:focus {
+        color: $yellow-color;
+      }
+    }
+  }
+}
+
+#footer-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: .5rem;
+  margin: 0;
+
+  img {
+    border-radius: 2px;
+  }
+}
+
+#footer-menu {
+  margin: 0;
+}
+
+#footer-bottom {
+  padding: $spacing-default;
+
+  font-family: $sans-font, $fallback-font;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+
+  border-top: 1px solid $gray-color-light;
+
+  > .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#footer-social {
+  a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: $spacing-default;
+
+    svg {
+      margin-right: .5rem;
+    }
+
+    &:hover, &:focus {
+      color: $gray-color-darkest;
+    }
+  }
+}
+
+#footer-copyright {
+  margin: 0;
+
+  a {
+    color: $yellow-color;
+
+    &:hover, &:focus {
+      color: $gray-color-darkest;
+    }
+  }
+}
