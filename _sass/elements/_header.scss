@@ -27,7 +27,7 @@
     &:nth-child(4) { order: 5; }
     &:last-child { order: 6; }
 
-    &:hover, &:focus {
+    &:hover, &:focus, &.is-active {
       color: $yellow-color;
     }
   }

@@ -35,7 +35,7 @@
     </a>
   
     {%- for menu_item in site.menu -%}
-      <a href="{{ menu_item.url }}" class="item">{{ menu_item.name }}</a>
+      <a href="{{ menu_item.url }}" class="item{% if page.url == menu_item.url %} is-active{% endif %}">{{ menu_item.name }}</a>
     {%- endfor -%}
   </nav>
 </header>
