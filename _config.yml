@@ -25,6 +25,9 @@ social_links:
 sass:
   style: compressed
 
+# Markdown
+markdown: kramdown
+
 # File settings
 exclude:
   - Gemfile
