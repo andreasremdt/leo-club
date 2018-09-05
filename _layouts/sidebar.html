@@ -2,10 +2,17 @@
 layout: default
 ---
 
-<main class="has-sidebar container">
-  <div class="main-content">
-    {{ content }}
-  </div>
+<div class="container">
+  {%- if page.layout != 'post' %}
+    <h1 class="page-title">{{ page.title }}</h1>
+  {%- endif -%}
 
-  {% include sidebar.html %}
-</main>
+  <main class="has-sidebar">
+    <div class="main-content{% if page.background or page.layout == 'post' %} -background{% endif %}">
+      
+      {{ content }}
+    </div>
+  
+    {% include sidebar.html %}
+  </main>
+</div>

@@ -20,3 +20,18 @@ img, svg {
 figure {
   margin: 0;
 }
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: current color;
+  box-shadow: 0 0 0 30px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  color: $gray-color;
+}
+
+main {
+  display: block;
+}

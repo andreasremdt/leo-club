@@ -1,0 +1,23 @@
+.input {
+  padding: .8rem $spacing-default;
+  width: 100%;
+
+  border: 1px solid $gray-color-light;
+  border-radius: 2px;
+
+  font: 400 14px/1 $sans-font, $fallback-font;
+
+  color: $gray-color-dark;
+  background-color: transparent;
+
+  outline: none;
+  appearance: none;
+
+  &:hover {
+    border-color: darken($gray-color-light, 10%);
+  }
+
+  &:focus {
+    border-color: $gray-color;
+  }
+}

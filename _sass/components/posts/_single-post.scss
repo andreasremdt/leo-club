@@ -1,11 +1,6 @@
 .single-post {
   display: flex;
   flex-direction: column;
-  padding: $spacing-default * 2;
-
-  background-color: $white-color;
-  
-  box-shadow: 0 0 .4rem rgba(0, 0, 0, .14);
 
   > .thumbnail {
     order: -1;
@@ -52,7 +47,7 @@
       }
     }
 
-    .title {
+    > .title {
       padding: 0 $spacing-default;
       margin-bottom: 1rem;
 
@@ -61,7 +56,7 @@
       color: $gray-color-darkest;
     }
 
-    .date {
+    > .date {
       display: block;
       margin-bottom: 1rem;
 
@@ -70,7 +65,7 @@
       color: $gray-color;
     }
 
-    .category {
+    > .category {
       display: block;
       order: -1;
       height: 35px;

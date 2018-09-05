@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;
+  padding: .7rem $spacing-default;
+
+  border: none;
+  border-radius: 2px;
+
+  font: 600 14px $sans-font, $fallback-font;
+  text-transform: uppercase;
+
+  color: $white-color;
+  background-color: $yellow-color;
+
+  outline: none;
+  appearance: none;
+
+  &:hover, &:focus {
+    background-color: $gray-color-darkest;
+  }
+}
