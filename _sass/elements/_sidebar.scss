@@ -3,11 +3,14 @@
 
   > section {
     padding: $spacing-default;
-    margin-bottom: $spacing-default;
-
+    
     background-color: $white-color;
-
+    
     box-shadow: 0 0 .4rem rgba(0, 0, 0, .14);
+    
+    &:not(:last-child) {
+      margin-bottom: $spacing-default;
+    }
   }
 }
 
