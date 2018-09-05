@@ -1,0 +1,11 @@
+.main-header {
+  border-bottom: 1px solid $gray-color-light;
+
+  background-color: $white-color;
+
+  > .inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

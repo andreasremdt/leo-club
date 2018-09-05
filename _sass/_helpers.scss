@@ -1,18 +1,3 @@
-.link-external {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    top: -6px;
-    right: -18px;
-    width: 14px;
-    height: 14px;
-
-    content: url("/assets/svgs/external.svg");
-    filter: brightness(0.6);
-  }
-}
-
 .fancy-title {
   padding: .6rem 1rem;
   position: relative;
@@ -51,6 +36,13 @@
   }
 }
 
-.text-center {
+._center {
   text-align: center;
+}
+
+._list {
+  padding-left: 0;
+  margin: 0;
+  
+  list-style: none;
 }

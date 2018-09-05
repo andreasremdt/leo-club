@@ -1,41 +1,18 @@
-<header id="site-header">
-  <div id="top-bar">
-    <div class="container">
-      <ul id="social-icons">
-        {%- for social_link in site.social_links -%}
-          <li>
-            <a href="{{ social_link.url }}" target="_blank" rel="noopener" title="Der Leo-Club auf {{ social_link.name }}">
-              <svg width="18" height="18">
-                <use xlink:href="/assets/svgs/icons.svg#icon-{{ social_link.name | downcase }}"></use>
-              </svg>
-            </a>
-          </li>
-        {%- endfor -%}
-      </ul>
-      <form action="/search/" method="GET">
-        <input type="search" id="search-input" placeholder="Seite durchsuchen..." aria-label="Suchbegriff eingeben" required>
-        <button type="submit" id="search-button" aria-label="Jetzt suchen">
-          <svg width="16" height="16" viewBox="0 0 26 28">
-            <path fill="currentColor" d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
-          </svg>
-        </button>
-      </form>
-    </div>
-  </div>
-  <nav id="site-navigation">
-    <a href="{{ site.url }}" id="site-logo">
-      <img src="{{ "assets/svgs/curved-ribbon.svg" | relative_url }}" alt="Logo">
+<header class="main-header">
+  <div class="container inner">
+    <ul class="social-icons _list">
+      {%- for item in site.social_links -%}
+        {% include social-icon.html url=item.url name=item.name list=true %}
+      {%- endfor -%}
+    </ul>
 
-      <div id="title">
-        {{ site.title }}
-      </div>
-      <div id="arrows">
-        Seit 2009
-      </div>
-    </a>
-  
-    {%- for menu_item in site.menu -%}
-      <a href="{{ menu_item.url }}" class="item{% if page.url == menu_item.url %} is-active{% endif %}">{{ menu_item.name }}</a>
-    {%- endfor -%}
-  </nav>
+    <form action="/search/" method="GET" class="search-form">
+      <input type="search" class="input" placeholder="Seite durchsuchen..." aria-label="Suchbegriff eingeben" required>
+      <button type="submit" class="button" aria-label="Jetzt suchen">
+        <svg width="16" height="16" viewBox="0 0 26 28">
+          <path fill="currentColor" d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
+        </svg>
+      </button>
+    </form>
+  </div>
 </header>

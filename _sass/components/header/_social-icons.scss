@@ -1,0 +1,16 @@
+.social-icons {
+  display: flex;
+  padding: .5rem 0;
+
+  border-right: 1px solid $gray-color-light;
+
+  .item {
+    margin-right: 1rem;
+
+    color: $gray-color;
+
+    &:hover, &:focus {
+      color: $gray-color-darkest;
+    }
+  }
+}

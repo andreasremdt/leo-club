@@ -1,0 +1,25 @@
+.fancy-image {
+  position: relative;
+
+  &::after, &::before {
+    content: "";
+
+    position: absolute;
+
+    border: 1px solid rgba($white-color, .7);
+  }
+
+  &::after {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+  }
+
+  &::before {
+    top: calc(5% - 2px);
+    left: calc(5% + 2px);
+    width: calc(90% - 4px);
+    height: calc(90% + 4px);
+  }
+}

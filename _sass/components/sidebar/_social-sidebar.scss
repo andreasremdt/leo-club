@@ -1,0 +1,10 @@
+.social-sidebar {
+  display: flex;
+  justify-content: center;
+
+  color: $gray-color-darkest;
+
+  .item {
+    margin: 0 .5rem;
+  }
+}

@@ -1,0 +1,15 @@
+.short-post {
+  margin-bottom: $spacing-default;
+
+  > .title {
+    margin: 0;
+
+    color: $gray-color-darkest;
+  }
+
+  > .date {
+    font-size: 14px;
+
+    color: $gray-color;
+  }
+}

@@ -1,0 +1,49 @@
+.site-logo {
+  order: 3;
+  padding-top: 60px;
+  margin: 0 $spacing-big;
+
+  text-align: center;
+
+  background: transparent url("/assets/svgs/curved-ribbon.svg") no-repeat center top;
+
+  > .title {
+    display: block;
+    
+    color: $yellow-color;
+
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  > .subtitle {
+    display: inline-block;
+    position: relative;
+
+    font: 600 12px $sans-font, $fallback-font;
+    text-transform: uppercase;
+
+    color: $gray-color-darkest;
+
+    &::before, &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 100%;
+    }
+
+    &::before {
+      right: 110%;
+
+      background: transparent url("/assets/svgs/left-arrow.svg") no-repeat right center;
+    }
+
+    &::after {      
+      left: 110%;
+
+      background: transparent url("/assets/svgs/right-arrow.svg") no-repeat left center;
+    }
+  }
+}

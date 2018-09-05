@@ -1,0 +1,4 @@
+<article class="short-post">
+  <h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+  <time class="date" datetime="{{ post.date | date_to_xmlschema }}">Veröffentlicht am {{ post.date | date: "%d.%m.%Y" }}</time>
+</article>

@@ -1,0 +1,41 @@
+.main-footer {
+  margin-top: $spacing-big;
+  padding-top: $spacing-big;
+  background-color: $white-color;
+  
+  box-shadow: 0 -.1rem .3rem rgba(0, 0, 0, .07);
+
+  .section {
+    flex: 1 1 25%;
+    padding: 0 1rem;
+  }
+
+  .bottom {
+    padding: $spacing-default;
+    margin-top: $spacing-default;
+
+    font-family: $sans-font, $fallback-font;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    border-top: 1px solid $gray-color-light;
+
+    > .inner {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .copyright {
+    margin: 0;
+
+    .link {
+      color: $yellow-color;
+
+      &:hover, &:focus {
+        color: $gray-color-darkest;
+      }
+    }
+  }
+}

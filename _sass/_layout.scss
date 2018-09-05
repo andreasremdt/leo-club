@@ -4,15 +4,19 @@
   padding: 0 $spacing-default;
 }
 
-#site-content {
+.row {
   display: flex;
+  margin: 0 -1rem;
 }
 
-#site-posts,
-#site-post {
-  flex: 1 1 70%;
-}
+.has-sidebar {
+  display: flex;
 
-#site-sidebar {
-  flex: 1 1 30%;
+  > .main-content {
+    flex: 1 1 70%;
+  }
+
+  > .main-sidebar {
+    flex: 1 1 30%;
+  }
 }

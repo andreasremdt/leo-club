@@ -1,43 +1,37 @@
-<footer id="site-footer">
+<footer class="main-footer">
   <div class="container">
     <div class="row">
-      <section class="footer-section">
+      <section class="section">
         <h3 class="fancy-title">Über Uns</h3>
         <p>{{ site.description }}</p>
-        <a href="https://www.leo-clubs.de/" class="link-external" target="_blank" rel="noopener">Leo-Clubs in Deutschland</a>
+        <a href="https://www.leo-clubs.de/" target="_blank" rel="noopener">Leo-Clubs in Deutschland</a>
       </section>
       
-      <section class="footer-section">
+      <section class="section">
         <h3 class="fancy-title">Aktionen</h3>
       
         {%- for post in site.posts limit: 2 -%}
-          <article class="footer-article">
-            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m.%Y" }}</time>
-          </article>
-          {%- endfor -%}
-        </section>
+          {%- include short-post.html -%}
+        {%- endfor -%}
+      </section>
         
-        <section class="footer-section">
-          <h3 class="fancy-title">Galerie</h3>
-          
-          <figure id="footer-gallery">
-            {%- assign count = 0 -%}
-            {%- for post in site.posts -%}
-              {%- if post.thumbnail and count < 6 -%}
-                <picture>
-                  <source srcset="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_80,w_80/{{ post.categories }}/{{ post.thumbnail | replace: ".jpg ", ".webp " }}" type="image/webp">
-                  <img src="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_80,w_80/{{ post.categories }}/{{ post.thumbnail }}" alt="{{ post.title }}" width="80" height="80">
-                </picture>
-                {% assign count = count | plus: 1 %}
-              {%- endif -%}
-            {%- endfor -%}
-          </figure>
+      <section class="section">
+        <h3 class="fancy-title">Galerie</h3>
+        
+        <figure class="image-gallery">
+          {%- assign count = 0 -%}
+          {%- for post in site.posts -%}
+            {%- if post.thumbnail and count < 6 -%}
+              {%- include image.html width="80" height="80" cat=post.categories src=post.thumbnail -%}
+              {% assign count = count | plus: 1 %}
+            {%- endif -%}
+          {%- endfor -%}
+        </figure>
       </section>
       
-      <nav class="footer-section">
+      <nav class="section">
         <h3 class="fancy-title">Menü</h3>
-        <ul id="footer-menu">
+        <ul>
           <li><a href="/">Startseite</a></li>
           <li><a href="/aktionen/">Aktionen</a></li>
           <li><a href="/ueber-uns/">Über Uns</a></li>
@@ -50,18 +44,18 @@
       </nav>
     </div>
   </div>
-  <div id="footer-bottom">
-    <div class="container">
-      <nav id="footer-social">
+  <div class="bottom">
+    <div class="container inner">
+      <nav class="social-footer">
         {%- for social_link in site.social_links -%}
-          <a href="{{ social_link.url }}" target="_blank" rel="noopener" title="Der Leo-Club auf {{ social_link.name }}">
-            <svg width="14" height="14">
+          <a class="item" href="{{ social_link.url }}" target="_blank" rel="noopener" title="Der Leo-Club auf {{ social_link.name }}">
+            <svg class="icon" width="14" height="14">
               <use xlink:href="/assets/svgs/icons.svg#icon-{{ social_link.name | downcase }}"></use>
             </svg> {{ social_link.name }}
           </a>
         {%- endfor -%}
         </nav>
-      <p id="footer-copyright">&copy; {{ 'now' | date: '%Y' }} <a href="{{ site.url }}">Leo-Club Weil am Rhein</a>. Alle Rechte vorbehalten.</p>
+      <p class="copyright">&copy; {{ 'now' | date: '%Y' }} <a class="link" href="{{ site.url }}">Leo-Club Weil am Rhein</a>. Alle Rechte vorbehalten.</p>
     </div>
   </div>
 </footer>

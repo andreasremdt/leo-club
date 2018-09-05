@@ -1,0 +1,15 @@
+.social-footer {
+  > .item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: $spacing-default;
+
+    > .icon {
+      margin-right: .5rem;
+    }
+
+    &:hover, &:focus {
+      color: $gray-color-darkest;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.main-navigation {
+  margin-bottom: $spacing-big;
+
+  background-color: $white-color;
+  
+  box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .07);
+
+  > .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $spacing-default;
+
+    > .item {
+      margin: 0 $spacing-default;
+
+      font: 700 14px $sans-font, $fallback-font;
+      text-transform: uppercase;
+
+      color: $gray-color-darkest;
+
+      &:nth-child(2) { order: 1; }
+      &:nth-child(3) { order: 2; }
+      &:nth-child(4) { order: 4; }
+      &:nth-child(5) { order: 5; }
+
+      &:hover, &:focus, &.-active {
+        color: $yellow-color;
+      }
+    }
+  }
+}

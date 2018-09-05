@@ -1,0 +1,33 @@
+.search-form {
+  display: flex;
+
+  > .input {
+    padding: 0 1rem;
+    
+    font-family: $sans-font, $fallback-font;
+    
+    color: $gray-color-darkest;
+    background-color: transparent;
+    
+    border: none;
+    
+    outline: none;
+  }
+
+  > .button {
+    display: inline-flex;
+    padding: 0;
+
+    background-color: transparent;
+    color: $gray-color;
+
+    border: none;
+
+    cursor: pointer;
+    outline: none;
+
+    &:hover, &:focus {
+      color: $gray-color-darkest;
+    }
+  }
+}

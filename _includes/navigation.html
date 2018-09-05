@@ -1,0 +1,12 @@
+<nav class="main-navigation">
+  <div class="container inner">
+    <a href="{{ site.url }}" class="site-logo">
+      <span class="title">{{ site.title }}</span>
+      <span class="subtitle">Seit 2009</span>
+    </a>
+
+    {%- for menu_item in site.menu -%}
+      <a href="{{ menu_item.url }}" class="item{% if page.url == menu_item.url %} -active{% endif %}">{{ menu_item.name }}</a>
+    {%- endfor -%}
+  </div>
+</nav>
