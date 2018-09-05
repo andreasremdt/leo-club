@@ -1,4 +1,4 @@
 <picture {% if include.class %}class="{{ include.class }}"{% endif %}>
-  <source srcset="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_{{ include.height }},w_{{ include.width }}/{{ include.cat }}/{{ include.src | replace: ".jpg ", ".webp " }}" type="image/webp">
+  <source srcset="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_{{ include.height }},w_{{ include.width }}/{{ include.cat }}/{{ include.src | replace: '.jpg', '.webp' }}" type="image/webp">
   <img class="image" src="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_{{ include.height }},w_{{ include.width }}/{{ include.cat }}/{{ include.src }}" alt="{{ post.title }}" width="{{ include.width }}" height="{{ include.height }}">
 </picture>

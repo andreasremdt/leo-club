@@ -1,0 +1,19 @@
+.feature {
+  flex: 1 1 33.33334%;
+  margin: $spacing-default 1rem;
+  padding: $spacing-default;
+
+  text-align: center;
+
+  background-color: $white-color;
+
+  box-shadow: 0 0 .4rem rgba(0, 0, 0, .14);
+
+  > .title {
+    font-size: 18px;
+  }
+
+  > .more {
+    margin-bottom: 0;
+  }
+}

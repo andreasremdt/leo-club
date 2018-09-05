@@ -10,16 +10,16 @@
   }
 
   &::after {
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+    top: $spacing-default;
+    left: $spacing-default;
+    right: $spacing-default;
+    bottom: $spacing-default;
   }
 
   &::before {
-    top: calc(5% - 2px);
-    left: calc(5% + 2px);
-    width: calc(90% - 4px);
-    height: calc(90% + 4px);
+    top: calc(#{$spacing-default} - 2px);
+    left: calc(#{$spacing-default} + 2px);
+    right: calc(#{$spacing-default} + 2px);
+    bottom: calc(#{$spacing-default} - 2px);
   }
 }

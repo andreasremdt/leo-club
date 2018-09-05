@@ -46,3 +46,16 @@
   
   list-style: none;
 }
+
+.banner {
+  display: block;
+  order: -1;
+  height: 35px;
+  margin-bottom: $spacing-default;
+
+  color: $white-color;
+  background: transparent url("/assets/svgs/ribbon.svg") no-repeat center center;
+  
+  font: 600 12px/30px $sans-font, $fallback-font;
+  text-transform: uppercase;
+}

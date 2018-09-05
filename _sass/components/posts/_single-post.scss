@@ -27,6 +27,7 @@
       &::before,
       &::after {
         content: "";
+        z-index: -1;
 
         position: absolute;
         bottom: 0;
@@ -50,33 +51,11 @@
     > .title {
       padding: 0 $spacing-default;
       margin-bottom: 1rem;
-
-      line-height: 1.3;
-
-      color: $gray-color-darkest;
     }
 
     > .date {
       display: block;
       margin-bottom: 1rem;
-
-      font-size: 14px;
-
-      color: $gray-color;
-    }
-
-    > .category {
-      display: block;
-      order: -1;
-      height: 35px;
-      margin-bottom: $spacing-default;
-
-      
-      color: $white-color;
-      background: transparent url("/assets/svgs/ribbon.svg") no-repeat center center;
-      
-      font: 600 12px/30px $sans-font, $fallback-font;
-      text-transform: uppercase;
     }
   }
 }

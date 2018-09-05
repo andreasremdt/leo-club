@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="container">
+  <figure class="hero-banner fancy-image">
+    {% include image.html width="1170" height="550" cat="pflegeheim" src="20-01.jpg" %}
+    <figcaption class="tile">
+      <h1 class="title">Miteinander statt Gegeneinander</h1>
+      <p>Der Leo-Club Weil am Rhein ist ein sozial engagierter Jugendclub aus dem Dreiländereck, dessen Mitglieder sich für Menschen mit Behinderung, benachteiligte Kinder und ältere Menschen einsetzt.</p>
+      <a href="/ueber-uns/" class="more">Erfahre mehr über uns</a>
+      <span class="banner" aria-hidden="true">Leo-Clubs</span>
+    </figcaption>
+  </figure>
+
+  <div class="row hero-features">
+    {% for section in page.sections %}
+      <article class="feature">
+        <h2 class="title fancy-title">{{ section.title }}</h2>
+        <p class="content">{{ section.content }}</p>
+        {% if section.link %}
+          <a class="more" href="{{ section.link.url }}">{{ section.link.title }}</a>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</div>

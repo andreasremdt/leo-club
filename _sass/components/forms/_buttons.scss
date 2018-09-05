@@ -18,3 +18,17 @@
     background-color: $gray-color-darkest;
   }
 }
+
+.more {
+  display: inline-block;
+  margin-bottom: $spacing-default;
+
+  color: $yellow-color;
+
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &:hover, &:focus {
+    color: $gray-color-darkest;
+  }
+}
