@@ -7,21 +7,32 @@ layout: default
     {% include image.html width="1170" height="550" cat="pflegeheim" src="20-01.jpg" %}
     <figcaption class="tile">
       <h1 class="title">Miteinander statt Gegeneinander</h1>
-      <p>Der Leo-Club Weil am Rhein ist ein sozial engagierter Jugendclub aus dem Dreiländereck, dessen Mitglieder sich für Menschen mit Behinderung, benachteiligte Kinder und ältere Menschen einsetzt.</p>
+      <p>Der Leo-Club Weil am Rhein ist ein sozial engagierter Jugendclub aus dem Dreiländereck, dessen Mitglieder sich für Menschen mit Behinderung, benachteiligte Kinder und Heimbewohner einsetzt.</p>
       <a href="/ueber-uns/" class="more">Erfahre mehr über uns</a>
       <span class="banner" aria-hidden="true">Leo-Clubs</span>
     </figcaption>
   </figure>
 
-  <div class="row hero-features">
+  <div class="row">
     {% for section in page.sections %}
-      <article class="feature">
-        <h2 class="title fancy-title">{{ section.title }}</h2>
-        <p class="content">{{ section.content }}</p>
+      <article class="content-tile grid-3 _center">
+        <h2 class="fancy-title">{{ section.title }}</h2>
+        <p>{{ section.content }}</p>
         {% if section.link %}
           <a class="more" href="{{ section.link.url }}">{{ section.link.title }}</a>
         {% endif %}
       </article>
     {% endfor %}
+  </div>
+
+  <div class="row hero-video">
+    <figure class="grid-2 content-tile">
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ajktoGpa0s8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </figure>
+    <div class="grid-2 content-tile">
+      <p>Leo-Clubs ist eine weltweit tätige, zu den Lions gehörende Organisation bestehend aus tausenden von Clubs und noch viel mehr Mitgliedern. In der Regel kannst du ab 16 Jahre Leo werden, das Maximalalter liegt bei 30.</p>
+      <p>Unser Club wurde 2009 gegründet und hat seither mehr als 200 Aktionen durchgeführt. Einen Teil dieser Aktionen kannst du im Video sehen.</p>
+      <p><strong>Hast du Lust, mitzumachen? Noch nicht sicher, worum es wirklich geht? Informiere dich über <a href="/ueber-uns/">unsere Geschichte</a> oder <a href="/aktionen/">entdecke unsere Aktionen</a>.</strong></p>
+    </div>
   </div>
 </div>
