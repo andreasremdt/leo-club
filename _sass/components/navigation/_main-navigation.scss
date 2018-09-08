@@ -13,9 +13,11 @@
 
     > .item {
       margin: 0 $spacing-default;
+      flex: 1;
 
       font: 700 14px $sans-font, $fallback-font;
       text-transform: uppercase;
+      text-align: center;
 
       color: $gray-color-darkest;
 
