@@ -29,13 +29,5 @@
 
   .copyright {
     margin: 0;
-
-    .link {
-      color: $yellow-color;
-
-      &:hover, &:focus {
-        color: $gray-color-darkest;
-      }
-    }
   }
 }

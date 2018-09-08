@@ -1,0 +1,11 @@
+.row {
+  display: flex;
+  margin: 0 -1rem;
+}
+
+[class*="grid-"] {
+  margin: 1rem;
+}
+
+.grid-3 { flex: 1 1 33.3333334%; }
+.grid-2 { flex: 1 1 50%; }
