@@ -26,7 +26,7 @@
     <h3 class="fancy-title">Kategorien</h3>
     <ul>
       {%- for category in site.categories -%}
-        <li><a href="#">{{ category | first | strip_html }}</a></li>
+        <li><a href="/aktionen/{{ category | first }}/">{{ category | first | capitalize }}</a></li>
       {%- endfor -%}
     </ul>
   </section>

@@ -6,6 +6,8 @@ permalink: /aktionen/
 background: false
 ---
 
-{%- for post in site.posts limit: 10 -%}
-  {%- include post.html -%}
+{%- for post in site.posts -%}
+  {%- unless post.categories contains 'news' -%}
+    {%- include post.html -%}
+  {%- endunless -%}
 {%- endfor -%}
