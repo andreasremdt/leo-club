@@ -38,6 +38,27 @@ main {
   display: block;
 }
 
+table {
+  width: 100%;
+  margin-bottom: $spacing-default;
+
+  border-collapse: collapse;
+
+  th {
+    padding: .5rem 0;
+
+    text-align: left;
+
+    color: $gray-color-darkest;
+  }
+
+  td {
+    padding: .5rem 0;
+
+    border-top: 1px solid $gray-color-light;
+  }
+}
+
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }

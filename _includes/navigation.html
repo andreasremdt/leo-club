@@ -6,7 +6,7 @@
     </a>
 
     {%- for menu_item in site.menu -%}
-      <a href="{{ menu_item.url }}" class="item{% if page.url == menu_item.url %} -active{% endif %}">{{ menu_item.name }}</a>
+      <a href="{{ menu_item.url }}" class="item{% if page.url == menu_item.url or page.path contains '_posts/' and menu_item.url == '/aktionen/' %} -active{% endif %}">{{ menu_item.name }}</a>
     {%- endfor -%}
   </div>
 </nav>
