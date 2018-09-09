@@ -3,24 +3,3 @@
   margin: auto;
   padding: 0 $spacing-default;
 }
-
-.main-content.-background {
-  padding: $spacing-default * 2;
-
-  background-color: $white-color;
-  
-  box-shadow: 0 0 .4rem rgba(0, 0, 0, .14);
-}
-
-.has-sidebar {
-  display: flex;
-  align-items: flex-start;
-
-  > .main-content {
-    flex: 1 1 70%;
-  }
-
-  > .main-sidebar {
-    flex: 1 1 30%;
-  }
-}

@@ -10,6 +10,8 @@ body {
   margin: 0;
 
   background-color: $gray-color-lightest;
+  
+  animation: fade-in .3s ease-out;
 }
 
 img, svg {
@@ -34,4 +36,9 @@ input:-webkit-autofill {
 
 main {
   display: block;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

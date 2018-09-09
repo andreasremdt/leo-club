@@ -1,10 +1,10 @@
-<aside class="main-sidebar">
-  <section class="section">
+<aside class="main-sidebar grid-4">
+  <section class="content-tile">
     <h3 class="fancy-title">Über Uns</h3>
     <p class="_center">{{ site.description }}</p>
   </section>
 
-  <section class="section">
+  <section class="content-tile">
     <h3 class="fancy-title">Netzwerke</h3>
     <p class="_center">Folgen Sie uns in den sozialen Netzwerken, um keine Neuigkeiten zu verpassen!</p>
     <ul class="social-sidebar _list">
@@ -14,7 +14,7 @@
     </ul>
   </section>
 
-  <section class="section">
+  <section class="content-tile">
     <h3 class="fancy-title">Aktuelles</h3>
 
     {%- for post in site.posts limit: 2 -%}
@@ -22,7 +22,7 @@
     {%- endfor -%}
   </section>
 
-  <section class="section">
+  <section class="content-tile">
     <h3 class="fancy-title">Kategorien</h3>
     <ul>
       {%- for category in site.categories -%}

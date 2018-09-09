@@ -7,8 +7,8 @@ layout: default
     <h1>{{ page.title }}</h1>
   {%- endif -%}
 
-  <main class="has-sidebar">
-    <div class="main-content{% if page.background or page.layout == 'post' %} -background{% endif %}">
+  <main class="row">
+    <div class="main-content grid-7{% if page.background or page.layout == 'post' %} content-tile -big{% endif %}">
       
       {{ content }}
     </div>

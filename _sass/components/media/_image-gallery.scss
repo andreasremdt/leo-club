@@ -1,10 +1,13 @@
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-gap: .5rem;
 
   .image {
     border-radius: 2px;
+  }
+
+  &.-big {
+    grid-gap: $spacing-default;
   }
 }

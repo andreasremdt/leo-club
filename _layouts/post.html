@@ -15,6 +15,13 @@ layout: sidebar
     </figure>
   {%- endif -%}
 
-  
   {{ content }}
+  
+  {%- if page.gallery -%}
+    <figure class="image-gallery -big">
+      {%- for image in page.gallery -%}
+        {%- include image.html width="250" height="180" cat=page.categories src=image.image -%}
+      {%- endfor -%}
+    </figure>
+  {%- endif -%}
 </article>
