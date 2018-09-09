@@ -6,8 +6,6 @@ permalink: /impressum/
 background: true
 ---
 
-## Vorstand & Adresse
-
 |                   | Vorstand des Clubs | Vorstand des Hilfswerks |
 | ----------------- | ------------------ | ----------------------- |
 | Präsident/in      | Markus Thamerus    | Inge Thamerus           |

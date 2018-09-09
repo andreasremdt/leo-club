@@ -3,6 +3,7 @@ layout: page
 title: Datenschutz nach DSGVO
 description: Datenschutzerklärung des Leo-Clubs. Wir nehmen den Schutz persönlicher Daten sehr ernst.
 permalink: /datenschutz/
+background: true
 ---
 
 ## I. Name und Anschrift des Leo-Clubs
