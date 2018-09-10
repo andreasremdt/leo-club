@@ -1,4 +1,5 @@
 .fancy-title {
+  margin-top: 0;
   padding: .6rem 1rem;
   position: relative;
 
@@ -55,8 +56,12 @@
   margin-bottom: $spacing-default;
 
   color: $white-color;
-  background: transparent url("/assets/svgs/ribbon.svg") no-repeat center center;
+  background: transparent url("/assets/svgs/ribbon-light.svg") no-repeat center center;
   
   font: 600 12px/30px $sans-font, $fallback-font;
   text-transform: uppercase;
+  
+  &.-dark {
+    background-image: url("/assets/svgs/ribbon-dark.svg");
+  }
 }
