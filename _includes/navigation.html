@@ -1,12 +1,13 @@
 <nav class="main-navigation">
   <div class="container inner">
     <a href="{{ site.url }}" class="site-logo">
+      <span class="banner -dark" aria-hidden="true">Leo-Clubs</span>
       <span class="title">{{ site.title }}</span>
       <span class="subtitle">Seit 2009</span>
     </a>
 
-    {%- for menu_item in site.menu -%}
-      <a href="{{ menu_item.url }}" class="item{% if page.url == menu_item.url or page.path contains '_posts/' and menu_item.url == '/aktionen/' %} -active{% endif %}">{{ menu_item.name }}</a>
+    {%- for node in site.data.menus.header -%}
+      <a href="{{ node.url }}" class="item{% if page.url == node.url or page.path contains '_posts/' and node.url == '/aktionen/' %} -active{% endif %}">{{ node.title }}</a>
     {%- endfor -%}
   </div>
 </nav>

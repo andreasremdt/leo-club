@@ -31,15 +31,10 @@
       
       <nav class="section">
         <h3 class="fancy-title">Menü</h3>
-        <ul>
-          <li><a href="/">Startseite</a></li>
-          <li><a href="/aktionen/">Aktionen</a></li>
-          <li><a href="/ueber-uns/">Über Uns</a></li>
-          <li><a href="/mitglied-werden/">Mitglied werden</a></li>
-          <li><a href="/kontakt/">Kontakt</a></li>
-          <li><a href="/impressum/">Impressum</a></li>
-          <li><a href="/datenschutz/">Datenschutz</a></li>
-          <li><a href="/sitemap/">Sitemap</a></li>
+        <ul class="footer-menu">
+          {%- for node in site.data.menus.footer -%}
+            <li><a href="{{ node.url }}" class="item{% if page.url == node.url or page.path contains '_posts/' and node.url == '/aktionen/' %} -active{% endif %}">{{ node.title }}</a></li>
+          {%- endfor -%}
         </ul>
       </nav>
     </div>

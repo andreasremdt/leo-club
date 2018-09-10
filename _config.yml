@@ -40,14 +40,3 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
-
-# Menu settings
-menu:
-  - name: Aktionen
-    url: /aktionen/
-  - name: Über Uns
-    url: /ueber-uns/
-  - name: Mitglied werden
-    url: /mitglied-werden/
-  - name: Kontakt
-    url: /kontakt/

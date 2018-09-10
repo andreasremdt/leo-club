@@ -1,0 +1,27 @@
+header:
+  - title: Aktionen
+    url: /aktionen/
+  - title: Über Uns
+    url: /ueber-uns/
+  - title: Mitglied werden
+    url: /mitglied-werden/
+  - title: Kontakt
+    url: /kontakt/
+
+footer:
+  - title: Startseite
+    url: /
+  - title: Aktionen
+    url: /aktionen/
+  - title: Über Uns
+    url: /ueber-uns/
+  - title: Mitglied werden
+    url: /mitglied-werden/
+  - title: Kontakt
+    url: /kontakt/
+  - title: Impressum
+    url: /impressum/
+  - title: Datenschutz
+    url: /datenschutz/
+  - title: Sitemap
+    url: /sitemap/
