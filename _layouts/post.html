@@ -11,11 +11,16 @@ layout: sidebar
 
   {%- if page.thumbnail -%}
     <figure class="thumbnail">
-      {%- include image.html width="800" height="450" cat=page.categories src=page.thumbnail class="thumbnail" -%}
+      <picture>
+        <source srcset="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_450,w_800/{{ page.categories | first }}/{{ page.thumbnail | replace: '.jpg', '.webp' }}" type="image/webp">
+        <img class="image" src="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_450,w_800/{{ page.categories | first }}/{{ page.thumbnail }}" alt="{{ page.title }}" width="800" height="450">
+      </picture>
     </figure>
   {%- endif -%}
 
   {{ content }}
+
+  <a href="/aktionen/#{{ page.title | slugify }}" class="button">Zurück</a>
   
   {%- if page.gallery -%}
     <figure class="image-gallery -big">

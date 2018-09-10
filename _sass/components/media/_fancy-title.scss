@@ -1,0 +1,39 @@
+.fancy-title {
+  margin-top: 0;
+  padding: .6rem 1rem;
+  position: relative;
+
+  text-align: center;
+  font-size: 18px;
+
+  border-radius: 2px;
+
+  background-color: $gray-color-darkest;
+  color: $white-color;
+
+  &::before {
+    position: absolute;
+    left: .8rem;
+    top: 0;
+    
+    width: 100px;
+    height: 100%;
+    
+    background: transparent url("/assets/svgs/left-arrow.svg") no-repeat left center;
+    filter: brightness(10);
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    right: .8rem;
+    top: 0;
+    
+    width: 100px;
+    height: 100%;
+    
+    background: transparent url("/assets/svgs/right-arrow.svg") no-repeat right center;
+    filter: brightness(10);
+    content: "";
+  }
+}

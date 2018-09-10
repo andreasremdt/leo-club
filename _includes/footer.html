@@ -1,13 +1,13 @@
 <footer class="main-footer">
   <div class="container">
     <div class="row">
-      <section class="section">
+      <section class="grid-4">
         <h3 class="fancy-title">Über Uns</h3>
         <p>{{ site.description }}</p>
-        <a href="https://www.leo-clubs.de/" target="_blank" rel="noopener">Leo-Clubs in Deutschland</a>
+        <p><a href="https://www.leo-clubs.de/" target="_blank" rel="noopener">Leo-Clubs in Deutschland</a></p>
       </section>
       
-      <section class="section">
+      <section class="grid-4">
         <h3 class="fancy-title">Aktionen</h3>
       
         {%- for post in site.posts limit: 2 -%}
@@ -15,21 +15,26 @@
         {%- endfor -%}
       </section>
         
-      <section class="section">
+      <section class="grid-4">
         <h3 class="fancy-title">Galerie</h3>
         
         <figure class="image-gallery">
           {%- assign count = 0 -%}
           {%- for post in site.posts -%}
             {%- if post.thumbnail and count < 6 -%}
-              {%- include image.html width="80" height="80" cat=post.categories src=post.thumbnail -%}
+              <a href="{{ post.url }}">
+                <picture>
+                  <source srcset="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_180,w_180,q_75/{{ post.categories | first }}/{{ post.thumbnail | replace: '.jpg', '.webp' }}" type="image/webp">
+                  <img class="image" src="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_180,w_180,q_75/{{ post.categories | first }}/{{ post.thumbnail }}" alt="{{ post.title }}" width="180" height="180">
+                </picture>
+              </a>
               {% assign count = count | plus: 1 %}
             {%- endif -%}
           {%- endfor -%}
         </figure>
       </section>
       
-      <nav class="section">
+      <nav class="grid-4">
         <h3 class="fancy-title">Menü</h3>
         <ul class="footer-menu">
           {%- for node in site.data.menus.footer -%}

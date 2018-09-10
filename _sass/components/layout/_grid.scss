@@ -7,7 +7,17 @@
   margin: 1rem;
 }
 
-.grid-3 { flex: 1 1 33.3333334%; }
 .grid-2 { flex: 1 1 50%; }
-.grid-4 { flex: 1 1 30%; }
+.grid-3 { flex: 1 1 33.3333334%; }
+.grid-4 { flex: 1 1 25%; }
+.grid-5 { flex: 1 1 30%; }
 .grid-7 { flex: 1 1 70%; }
+
+@media (max-width: 900px) {
+  .row { flex-wrap: wrap; }
+  .grid-4 { flex-basis: calc(50% - 2rem); }
+}
+
+@media (max-width: 600px) {
+  .grid-4 { flex-basis: calc(100% - 2rem); }
+}

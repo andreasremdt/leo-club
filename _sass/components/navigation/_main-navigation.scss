@@ -11,9 +11,21 @@
     align-items: center;
     padding: $spacing-default;
 
+    @media (max-width: 1000px) {
+      flex-wrap: wrap;
+      padding: 1rem $spacing-default;
+    }
+
     > .item {
       margin: 0 $spacing-default;
-      flex: 1;
+
+      @media (min-width: 800px) {
+        flex: 1;
+      }
+
+      @media (max-width: 600px) {
+        margin: .5rem .8rem;
+      }
 
       font: 700 14px $sans-font, $fallback-font;
       text-transform: uppercase;
