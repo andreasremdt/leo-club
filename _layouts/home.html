@@ -12,9 +12,9 @@ layout: default
     </figcaption>
   </figure>
 
-  <div class="row">
+  <div class="row -stretch">
     {% for section in page.sections %}
-      <article class="content-tile grid-3 _center">
+      <article class="content-tile -no-margin grid-3 _center">
         <h2 class="fancy-title">{{ section.title }}</h2>
         <p>{{ section.content }}</p>
         {% if section.link %}
@@ -24,11 +24,13 @@ layout: default
     {% endfor %}
   </div>
 
-  <div class="row hero-video">
-    <figure class="grid-2 content-tile">
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ajktoGpa0s8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </figure>
-    <div class="grid-2 content-tile">
+  <div class="row -stretch">
+    <div class="grid-2 content-tile -no-margin">
+      <figure class="responsive-iframe">
+        <iframe class="iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/ajktoGpa0s8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </figure>
+    </div>
+    <div class="grid-2 content-tile -no-margin">
       {{ content }}
     </div>
   </div>

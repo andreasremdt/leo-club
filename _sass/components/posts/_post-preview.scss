@@ -1,11 +1,4 @@
 .post-preview {
-  margin-bottom: $spacing-default * 2;
-  padding: $spacing-default;
-  
-  background: $white-color url("/assets/svgs/leafs.svg") no-repeat 97% 95%;
-  
-  box-shadow: 0 0 .4rem rgba(0, 0, 0, .14);
-  
   &.-thumbnail {
     @media (max-width: 600px) {
       display: flex;

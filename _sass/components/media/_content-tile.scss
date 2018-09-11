@@ -1,5 +1,6 @@
 .content-tile {
   padding: $spacing-default;
+  margin-bottom: $spacing-default;
 
   background-color: $white-color;
   
@@ -7,6 +8,10 @@
 
   @media (max-width: 800px) {
     padding: 1rem;
+  }
+
+  &:last-child:not(.-no-margin) {
+    margin-bottom: 0;
   }
 
   &.-big {
