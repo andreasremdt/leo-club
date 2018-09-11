@@ -40,3 +40,14 @@
     background-image: url("/assets/svgs/ribbon-dark.svg");
   }
 }
+
+.noscript {
+  margin: 0;
+  padding: 1rem $spacing-default;
+
+  background-color: $yellow-color;
+  color: $gray-color-darkest;
+  
+  font: 600 13px $sans-font, $fallback-font;
+  text-align: center;
+}
