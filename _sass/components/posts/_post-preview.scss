@@ -17,6 +17,8 @@
     }
 
     > .thumbnail {
+      background-color: $gray-color-darkest;
+      
       @media (min-width: 600px) {
         grid-row: 1 / 6;
       }
