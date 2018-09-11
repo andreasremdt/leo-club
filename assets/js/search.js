@@ -28,7 +28,7 @@
         if (this.status === 200) {
           try {
             var response = JSON.parse(this.responseText);
-  
+
             showResults(response.items);
           } catch (e) {
             handleError(e);
@@ -39,9 +39,13 @@
       }
   
       function showResults(items) {
-        items.forEach(function (item) {
-          wrapper.appendChild(getSearchItemHTML(item));
-        });
+        if (!items) {
+          handleError('Keine Ergebnisse gefunden.')
+        } else {
+          items.forEach(function (item) {
+            wrapper.appendChild(getSearchItemHTML(item));
+          });
+        }
       }
   
       function getSearchItemHTML(item) {
@@ -71,7 +75,7 @@
         var error = document.createElement('p');
   
         error.className = '_error';
-        error.innerHTML = `Bei deiner Suche ist leider ein Fehler aufgetreten, das tut uns leid. Bitte versuche es später erneut.<br><code class="code">${msg}</code>`;
+        error.innerHTML = `Bei deiner Suche ist leider ein Fehler aufgetreten, das tut uns leid.<br><code class="code">${msg}</code>`;
   
         wrapper.appendChild(error);
       }
