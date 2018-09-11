@@ -1,0 +1,69 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+
+  background-color: $gray-color-lightest;
+  
+  animation: fade-in .3s ease-out;
+}
+
+img, svg, iframe {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: current color;
+  box-shadow: 0 0 0 30px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  color: $gray-color;
+}
+
+main {
+  display: block;
+}
+
+table {
+  width: 100%;
+  margin-bottom: $spacing-default;
+
+  border-collapse: collapse;
+
+  th {
+    padding: .5rem 0;
+
+    text-align: left;
+
+    color: $gray-color-darkest;
+  }
+
+  td {
+    padding: .5rem 0;
+
+    border-top: 1px solid $gray-color-light;
+  }
+}
+
+textarea {
+  height: 100%;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

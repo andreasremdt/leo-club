@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 @import
-  "variables",
-  "reset",
-  "typography",
+  "base/variables",
+  "base/reset",
+  "base/typography",
+  "base/helpers",
   "components/layout/layout",
   "components/layout/grid",
-  "helpers",
   "components/header/main-header",
   "components/header/social-icons",
   "components/header/search-form",
@@ -22,7 +22,7 @@
   "components/media/fancy-title",
   "components/media/hero-banner",
   "components/media/content-tile",
-  "components/sidebar/main-sidebar",
+  "components/media/responsive-iframe",
   "components/sidebar/social-sidebar",
   "components/forms/contact-form",
   "components/forms/inputs",

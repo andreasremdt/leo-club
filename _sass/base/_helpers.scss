@@ -1,0 +1,42 @@
+._center {
+  text-align: center;
+}
+
+._list {
+  padding-left: 0;
+  margin: 0;
+  
+  list-style: none;
+}
+
+._error {
+  padding: 1rem $spacing-default;
+
+  background-color: $yellow-color;
+  color: $gray-color-darkest;
+  
+  font-family: 'Open Sans';
+  
+  border-radius: 2px;
+
+  > .code {
+    font-family: 90%;
+  }
+}
+
+.banner {
+  display: block;
+  order: -1;
+  height: 35px;
+  margin-bottom: 1rem;
+
+  color: $white-color;
+  background: transparent url("/assets/svgs/ribbon-light.svg") no-repeat center center;
+  
+  font: 600 12px/30px $sans-font, $fallback-font;
+  text-transform: uppercase;
+  
+  &.-dark {
+    background-image: url("/assets/svgs/ribbon-dark.svg");
+  }
+}
