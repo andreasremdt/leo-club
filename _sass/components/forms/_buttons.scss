@@ -17,6 +17,11 @@
   &:hover, &:focus {
     background-color: $gray-color-darkest;
   }
+
+  &[disabled] {
+    background-color: lighten($yellow-color, 10%);
+    cursor: not-allowed;
+  }
 }
 
 .more {

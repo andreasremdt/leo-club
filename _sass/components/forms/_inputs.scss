@@ -13,11 +13,36 @@
   outline: none;
   appearance: none;
 
+  &.-error {
+    border-color: $red-color;
+  }
+
   &:hover {
     border-color: darken($gray-color-light, 10%);
   }
 
   &:focus {
     border-color: $gray-color;
+  }
+}
+
+.input-group {
+  position: relative;
+
+  > .error {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    margin: 0;
+    padding: .2rem .5rem;
+    
+    font: 600 12px $sans-font, $fallback-font;
+
+    background-color: $red-color;
+    color: $white-color;
+
+    border-radius: 2px;
+
+    transform: translateY(-100%);
   }
 }
