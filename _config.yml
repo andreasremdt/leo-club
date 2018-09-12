@@ -35,6 +35,10 @@ exclude:
   - LICENSE.txt
   - .gitignore
   - .sass-cache
+  - package.json
+  - package-lock.json
+  - assets/src/
+  - gulpfile.js
 
 include:
   - _headers

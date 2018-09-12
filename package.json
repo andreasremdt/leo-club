@@ -1,0 +1,30 @@
+{
+  "name": "leo-club",
+  "version": "4.0.0",
+  "description": "Wir sind Jugendliche und Erwachsene aus Weil am Rhein und dem Dreiländereck (Deutschland, Frankreich und Schweiz) und engagieren uns ehrenamtlich für das Wohl von benachteiligten Kindern und Erwachsenen, etwa aus Pflegeheimen oder Problemfamilien.",
+  "main": "index.html",
+  "scripts": {
+    "build": "gulp && bundle exec jekyll build"
+  },
+  "keywords": [],
+  "author": "Andreas Remdt",
+  "homepage": "https://leo-club-weilamrhein.de",
+  "bugs": {
+    "url": "https://github.com/andreasremdt/leo-club/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreasremdt/leo-club.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
+  }
+}
