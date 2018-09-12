@@ -28,7 +28,7 @@
         transition: opacity .1s ease-out;
       }
 
-      &:hover::before {
+      &:hover::before, &:focus::before {
         opacity: 1;
       }
     }

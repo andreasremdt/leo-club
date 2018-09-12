@@ -15,7 +15,7 @@ social_links:
   - name: Facebook
     url: https://www.facebook.com/pages/Leo-Club-Weil-am-Rhein/189139934566022
   - name: Vimeo
-    url: http://vimeo.com/leoclubweilamrhein
+    url: https://vimeo.com/leoclubweilamrhein
   - name: Instagram
     url: https://www.instagram.com/leoclubweilamrhein/
   - name: RSS
@@ -39,6 +39,11 @@ exclude:
   - package-lock.json
   - assets/src/
   - gulpfile.js
+
+# HTML compression
+compress_html:
+  clippings: all
+  comments: all
 
 include:
   - _headers
