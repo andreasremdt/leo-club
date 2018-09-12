@@ -1,21 +1,23 @@
 # Leo-Club Weil am Rhein
 
-Wir sind Jugendliche und Erwachsene aus Weil am Rhein und dem Dreiländereck (Deutschland, Frankreich und Schweiz) und engagieren uns ehrenamtlich für das Wohl von benachteiligten Kindern und Erwachsenen, etwa aus Pflegeheimen oder Problemfamilien.
+We are young people and adults from Weil am Rhein and the Dreiländereck (Germany, France and Switzerland) and are volunteering for the well-being of disadvantaged children and adults, for example from nursing homes or problematic families.
 
-## Über diese Seite
+## About this repository
 
-Dies ist der Quellcode unserer Webseite mit Berichten und Bildern unserer Aktionen sowie weiteren Informationen zu unserem Club. Hast du Lust, dich mit uns zu engagieren und anderen Menschen zu helfen? Kontaktiere uns unter [info@leo-club-weilamrhein.de](mailto:info@leo-club-weilamrhein.de).
-
-Der komplette Quellcode ist öffentlich einsehbar und wurde unter die **MIT-Lizenz** gestellt, kann also frei kopiert und wiederverwendet werden.
+This is the source code of our website with reports and pictures of our activities as well as further information about ourselves. Would you like to get involved with us and help other people? Contact us at [kontakt@leo-club-weilamrhein.de](mailto:kontakt@leo-club-weilamrhein.de).
 
 ## Bei Problemen oder Ideen
 
-Hast du Probleme bei der Nutzung unserer Webseite festgestellt oder Ideen wie wir sie verbessern können. Gerne kannst du auf GitHub einen [Bugreport](https://github.com/andreasremdt/leo-club/issues) eröffnen.
+Have you noticed any problems using our website or ideas how to improve it? Feel free to open a [Bugreport](https://github.com/andreasremdt/leo-club/issues) on GitHub.
 
-## Technologien
+## Technologies
 
 * Jekyll
 * SCSS
-* EcmsScript 2015
+* EcmaScript 2015
 * Gulp
 * Forestry.io
+
+## Copyright
+
+This site and its source code is (c) 2018 by Leo-Club Weil am Rhein.
