@@ -14,6 +14,8 @@
   outline: none;
   appearance: none;
 
+  transition: background-color .1s linear;
+
   &:hover, &:focus {
     background-color: $gray-color-darkest;
   }

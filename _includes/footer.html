@@ -22,12 +22,7 @@
           {%- assign count = 0 -%}
           {%- for post in site.posts -%}
             {%- if post.thumbnail and count < 6 -%}
-              <a href="{{ post.url }}">
-                <picture>
-                  <source srcset="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_180,w_180,q_75/{{ post.categories | first }}/{{ post.thumbnail | replace: '.jpg', '.webp' }}" type="image/webp">
-                  <img class="image" src="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_180,w_180,q_75/{{ post.categories | first }}/{{ post.thumbnail }}" alt="{{ post.title }}" width="180" height="180">
-                </picture>
-              </a>
+              {%- include image.html width="180" height="180" cat=post.categories src=post.thumbnail link=true -%}
               {% assign count = count | plus: 1 %}
             {%- endif -%}
           {%- endfor -%}

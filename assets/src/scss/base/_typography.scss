@@ -16,6 +16,8 @@ a {
 
   text-decoration: none;
 
+  transition: color .1s linear;
+
   &:hover, &:focus {
     color: $yellow-color;
   }

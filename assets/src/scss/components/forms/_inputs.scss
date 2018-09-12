@@ -12,9 +12,10 @@
 
   outline: none;
   appearance: none;
+  transition: border-color .1s linear;
 
   &.-error {
-    border-color: $red-color;
+    border-color: $red-color !important;
   }
 
   &:hover {

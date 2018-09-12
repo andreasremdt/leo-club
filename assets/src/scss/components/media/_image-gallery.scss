@@ -3,6 +3,35 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: .5rem;
+
+    .link {
+      position: relative;
+      display: block;
+
+      &::before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba($yellow-color, .7);
+        color: $white-color;
+        
+        font: 600 13px 'Open Sans';
+        
+        opacity: 0;
+        content: 'Bild öffnen';
+        transition: opacity .1s ease-out;
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+    }
     
     .image {
       width: 100%;
