@@ -5,8 +5,13 @@
   "description": "Ehrenamtliches Engagement in Weil am Rhein durch Jugendliche und Erwachsene.",
   "icons": [
     {
-      "src": "/icons/android-chrome-96x96.png",
-      "sizes": "96x96",
+      "src": "/android-chrome-192x192.png?v=xQdONaLaMR",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-384x384.png?v=xQdONaLaMR",
+      "sizes": "384x384",
       "type": "image/png"
     }
   ],
