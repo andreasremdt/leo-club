@@ -14,7 +14,7 @@ Hast du Interesse, anderen Menschen zu helfen und dich zusammen mit uns sozial z
 
 Du fragst dich sicher, was mit Karriere gemeint ist? Nun, bevor du ein Leo werden kannst, musst du dich noch etwas gedulden. Wir nehmen nicht sofort neue Mitglieder auf, sondern nehmen dich erst einmal als Gast in den Club auf. Du bist für 3 - 6 Monate Gast und hast in diesem Zeitraum die Möglichkeit, dich bei uns umzuschauen. Wenn es dir gefällt und wenn wir dich für geeignet halten, dann steht einer Aufnahme als vollwertiger Leo nichts mehr im Wege! Die Mitgliedschaft ist übrigens komplett kostenlos, du musst weder für die Sitzungen noch für die Aktionen bezahlen - das machen alles wir.
 
-![Leo-Aktion in Huttwil](https://res.cloudinary.com/leoclub/image/upload/t_fullscreen/allgemein/sommercamp-in-huttwil.webp)
+![Leo-Aktion in Huttwil](https://res.cloudinary.com/leoclub/image/upload/t_fullscreen/allgemein/sommercamp-in-huttwil.jpg)
 
 Wenn du erst einmal Mitglied bist und Interesse hast, dann kannst du dich bei der nächsten Vorstandswahl für einen der vier verfügbaren Posten bewerben. Schreibst du gerne, dann ist der Posten des Sekretärs sicher interessant für dich. Der Schatzmeister muss mindestens 18 Jahre alt sein und verwaltet die Finanzen des Clubs, während der Präsident und sein Vertreter, der Vize-Präsident, den Club leiten und die Richtung angeben. Dazu gehören viel Planung, aber auch das Durchführen der Sitzungen und die Kontaktaufnahme zu anderen Clubs oder den Lions. Diese Aufgaben erfordern ein hohes Eigenengament, stehen dir aber prinzipiell nach deiner Wahl als Mitglied offen.
 

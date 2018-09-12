@@ -9,7 +9,7 @@ gulp.task("scss", function () {
   return gulp.src("assets/src/scss/styles.scss")
     .pipe(sass({ outputStyle: "compressed" })
       .on("error", sass.logError))
-    .pipe(autoprefixer({ browsers: ["last 2 versions"], grid: true }))
+    .pipe(autoprefixer({ browsers: ["last 2 versions"] }))
     .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest("assets/css"));
 });

@@ -22,7 +22,7 @@
           return;
         }
 
-        Array.from(fields).forEach(function(field) {
+        [].forEach.call(fields, function(field) {
           var error = hasError(field);
 
           if (error) {
