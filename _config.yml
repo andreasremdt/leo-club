@@ -39,6 +39,7 @@ exclude:
   - package-lock.json
   - assets/src/
   - gulpfile.js
+  - node_modules/
 
 # HTML compression
 compress_html:
