@@ -36,6 +36,9 @@ exclude:
   - .gitignore
   - .sass-cache
 
+include:
+  - _headers
+
 # Plugin settings
 plugins:
   - jekyll-seo-tag
