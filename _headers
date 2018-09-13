@@ -4,4 +4,4 @@
   Referrer-Policy: no-referrer
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self'; object-src 'self'; img-src 'self' https://res.cloudinary.com/leoclub/ data:; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src https://api.emailjs.com; frame-src https://www.youtube-nocookie.com/; form-action 'self'
+  Content-Security-Policy: default-src 'self'; object-src 'self'; img-src 'self' https://res.cloudinary.com/leoclub/ data:; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src https://api.emailjs.com https://www.googleapis.com/customsearch/; frame-src https://www.youtube-nocookie.com/; form-action 'self'
