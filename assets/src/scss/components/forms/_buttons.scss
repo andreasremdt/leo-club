@@ -24,6 +24,10 @@
     background-color: lighten($yellow-color, 10%);
     cursor: not-allowed;
   }
+
+  &.-block {
+    width: 100%;
+  }
 }
 
 .more {

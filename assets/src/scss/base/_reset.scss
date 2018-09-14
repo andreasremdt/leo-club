@@ -10,6 +10,7 @@ body {
   margin: 0;
 
   background-color: $gray-color-lightest;
+  -webkit-text-size-adjust: none;
   
   animation: fade-in .3s ease-out;
 }

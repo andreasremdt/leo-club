@@ -32,3 +32,11 @@ time {
 
   font-size: 14px;
 }
+
+.page-title {
+  margin-bottom: 0;
+
+  @media (max-width: 600px) {
+    font-size: 1.6rem;
+  }
+}
