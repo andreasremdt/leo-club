@@ -86,7 +86,7 @@ Wir fuhren also in diesem Jahr wieder für eine Woche in die Schweiz. Im Gepäck
 Der erste Kontakt wurde also am Bahnhof Huttwil geschlossen. Dass einige bekannte Gesichter dabei waren, war schön: Einige Kinder aus einem Kinderheim in Basel kannte man von der gemeinsamen Hausbootfahrt in den Osterferien. Natürlich wurden auch Leo Jean-Christophe und seine Schwester Mélissa aus Frankreich mit großem Hallo begrüßt. Mit dabei waren auch zwei Betreuer aus dem Kinderheim, welche uns bei der Betreuung der Kinder unterstützten.
 
 <figure class="responsive-iframe image-bordered">
-  <iframe width="560" height="315" title="Video zum trinationalen Sommercamp in Huttwil" data-lozad data-src="https://www.youtube.com/embed/iyX8eHY9xR8" allowfullscreen></iframe>
+  <iframe width="560" height="315" title="Video zum trinationalen Sommercamp in Huttwil" src="https://www.youtube-nocookie.com/embed/t3ExL4VhLlw" class="iframe" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </figure>
 
 Die Fahrt in dem großen Anhänger war schnell vorüber. Die Kinder stürmten sodann begeistert auf den Bauernhof. Während einige Leos mit den Neuankömmlingen eine kleine Führung durch den großen und teils verwinkelten Bauernhof zum Kennenlernen machten, stellten die anderen das Strohlager fertig. Liebevoll wurden die Schlafplätze ausgestaltet, welche für die nächste Woche für angenehme Nächte sorgen sollten. Als eine dicke und weiche Schicht Stroh auf dem Boden der riesengroßen Scheune verteilt war, konnten alle ihre Schlafsäcke platzieren. Schnell waren die Plätze eingenommen, wobei es neben den Plätzen auf dem flachen Boden auch höher gelegenere und bei einigen Campteilnehmern beliebtere Ecken gab.

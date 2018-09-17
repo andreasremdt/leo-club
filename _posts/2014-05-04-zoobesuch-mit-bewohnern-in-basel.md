@@ -9,6 +9,6 @@ Die Aktion im April stand unter einem tierisch guten Zeichen – zumindest wenn 
 
 Ohne große Worte verlieren zu wollen, möchten wir auf das Video aufmerksam machen, welches die Reise durch den Zoo viel besser beschreiben kann. Viel Spaß beim Anschauen!
 
-<figure class="responsive-iframe image-bordered">
-  <iframe width="560" height="315" title="Video zum Zoobesuch" data-lozad data-src="https://www.youtube.com/embed/dXBhYYz3cVc" allowfullscreen></iframe>
+<figure class="responsive-iframe">
+  <iframe width="560" height="315" class="iframe" title="Video zum Zoobesuch" src="https://www.youtube-nocookie.com/embed/UK6keGDRqdM" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </figure>

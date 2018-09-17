@@ -19,8 +19,8 @@ gallery:
 
 Gerade mal zwei Tage waren die zehn- bis zwölfjährigen Kinder in der Obhut des Arbeitskreises um deren Leiterin Christiane Aßmann, als am 12. Juli das außergewöhnliche Abenteuer „Schifffahrt in Frankreich“ für sie begann. Von Volker Hütter und Harald Werner wurden sie in Kleinbussen zur Hausbootbasis von KUHNLE-TOURS im lothringischen Niderviller gefahren. Dort wurden sie von den etwas früher angereisten Leos erwartet. Bei traumhaft schönem Wetter sollten drei sehr erlebnisreiche und von einem harmonischen Miteinander geprägte Tage folgen.
 
-<figure class="responsive-iframe image-bordered">
-  <iframe width="560" height="315" title="Video zur Hausbootfahrt" data-lozad data-src="https://www.youtube.com/embed/9t8WQDXQWrI" allowfullscreen></iframe>
+<figure class="responsive-iframe">
+  <iframe width="560" height="315" title="Video zur Hausbootfahrt" class="iframe" src="https://www.youtube-nocookie.com/embed/yo73hVXiJFI" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </figure>
 
 Als am Samstagmorgen die Fahrt auf den beiden großen Hausbooten, einem Kormoran 1280 und einem Kormoran 1500, begann, hatte man schon viel zusammen gespielt, Riesenmikado zum Beispiel oder einige Geschicklichkeitsspiele aus dem vielfach erprobten Leo-Zehnkampf. Sehr schön war es für die Ferienkinder, dass die Leos drei fünfzehnjährige Mädchen russischer Abstammung aus Lörrach mitgenommen hatten. Hoch motiviert und mit viel Liebe kümmerten sich diese um das Wohlbefinden der jungen Gäste, die sich im Übrigen von der ersten bis zur letzten Minute ruhig, aufgeschlossen und überaus höflich gaben.  

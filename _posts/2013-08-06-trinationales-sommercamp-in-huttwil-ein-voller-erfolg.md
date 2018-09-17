@@ -40,8 +40,8 @@ gallery:
 ---
 Alle guten Dinge sind drei – das ist zumindest eine Redensart, welche sich des öfteren als rechtmäßig erweist. So auch beim dritten trinationalen Sommercamp in Huttwil, welches in der ersten Ferienwoche Kinder aus Deutschland, Frankreich und der Schweiz auf einem Bauernhof vereinte. Dazu trugen unter anderem zahlreiche Spiele wie Wasserbombenweitwurf, Seilspringen oder Baden im Schwimmbad ebenso wie diverse, typische Arbeiten wie das Stapeln von Holz, Melken von Kühen oder Ausmisten eines Hühnergeheges bei.
 
-<figure class="responsive-iframe image-bordered">
-  <iframe width="560" height="315" title="Video zum Sommercamp in Huttwil" data-lozad data-src="https://www.youtube.com/embed/REVe77nQdMM" allowfullscreen></iframe>
+<figure class="responsive-iframe">
+  <iframe width="560" height="315" title="Video zum Sommercamp in Huttwil" src="https://www.youtube-nocookie.com/embed/nxjme3rSIsA" class="iframe" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </figure>
 
 Das ideale Wetter bot mit sonnigen, heißen Tagen auch etwas Regen und damit die optimale Abkühlung für die anstrengenden Arbeiten. Dazu gehörte auch die Fertigstellung des Bodens in der Scheune, in welcher wir jedes Jahr im Stroh schlafen. Seit einigen Jahren ist es inzwischen unsere Aufgabe, den Boden Stück für Stück zu erneuern und damit zur Instandhaltung des alten Gebäudes beizutragen. In diesem Jahr wurde diese Aufgabe nun erfolgreich abgeschlossen.
