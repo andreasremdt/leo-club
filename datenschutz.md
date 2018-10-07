@@ -15,7 +15,7 @@ Märktweg 27c
 79576 Weil am Rhein - Haltingen  
 Deutschland  
 E-Mail: [kontakt@leo-club-weilamrhein.de](mailto:kontakt@leo-club-weilamrhein.de)  
-Webseite: [https//leo-club-weilamrhein.de](https://leo-club-weilamrhein.de)
+Webseite: [https://leo-club-weilamrhein.de](https://leo-club-weilamrhein.de)
 
 ## IV. Allgemeines zur Datenverarbeitung
 
