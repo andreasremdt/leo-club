@@ -1,13 +1,17 @@
-<picture {% if include.class %}class="{{ include.class }}"{% endif %}>
+<picture {% if include.class %}class="{{ include.class }}" {% endif %}>
   {% if include.link %}
-    <a class="link" href="https://res.cloudinary.com/leoclub/image/upload/t_fullscreen,q_75/{{ include.cat }}/{{ include.src }}" data-fancybox="gallery">
-  {% endif %}
-      <source data-srcset="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_{{ include.height }},w_{{ include.width }}/{{ include.cat }}/{{ include.src | replace: '.jpg', '.webp' }}" type="image/webp" data-loader>
-      <img data-src="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_{{ include.height }},w_{{ include.width }}/{{ include.cat }}/{{ include.src }}" alt="{{ post.title }}" width="{{ include.width }}" height="{{ include.height }}" class="image" data-loader>
-      <noscript>
-        <img src="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_{{ include.height }},w_{{ include.width }}/{{ include.cat }}/{{ include.src }}" alt="{{ post.title }}" width="{{ include.width }}" height="{{ include.height }}" class="image">
-      </noscript>
-  {% if include.link %}
-    </a>
+  <a class="link" href="https://res.cloudinary.com/leoclub/image/upload/t_fullscreen,q_75/{{ include.cat }}/{{ include.src }}"
+    data-litebox data-gallery="post">
+    {% endif %}
+    <source data-srcset="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_{{ include.height }},w_{{ include.width }}/{{ include.cat }}/{{ include.src | replace: '.jpg', '.webp' }}"
+      type="image/webp" data-loader>
+    <img data-src="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_{{ include.height }},w_{{ include.width }}/{{ include.cat }}/{{ include.src }}"
+      alt="{{ post.title }}" width="{{ include.width }}" height="{{ include.height }}" class="image" data-loader>
+    <noscript>
+      <img src="https://res.cloudinary.com/leoclub/image/upload/c_fill,g_center,h_{{ include.height }},w_{{ include.width }}/{{ include.cat }}/{{ include.src }}"
+        alt="{{ post.title }}" width="{{ include.width }}" height="{{ include.height }}" class="image">
+    </noscript>
+    {% if include.link %}
+  </a>
   {% endif %}
 </picture>
