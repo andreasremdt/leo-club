@@ -6,7 +6,7 @@ categories:
 - weitere
 thumbnail: ''
 gallery:
-- image: 82-01
+- image: 82-01.jpg
 
 ---
 In Zusammenarbeit mit Hieber und der Dreiländereck-Tafel Lörrach-Weil am Rhein hat der Leo-Club mehr als 70 Stoffbeutel mit Lebensmitteln an Bedürftige kostenlos verteilt. Zu den Lebensmitteln gehörten u. a. Nudeln, Kaffee, Milch, Konserven und Süßigkeiten für Kinder, aber auch zahlreiche Hygieneartikel.
